@@ -4,5 +4,6 @@ import com.example.jobportal_signup.models.Users;
 import jakarta.persistence.Id;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface UsersRepository extends JpaRepository<Users, Id> {
+public interface UsersRepository extends JpaRepository<Users, Integer> {
+    Users findByEmail(String email);
 }
