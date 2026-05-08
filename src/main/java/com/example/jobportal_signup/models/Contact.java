@@ -75,3 +75,4 @@ public class Contact {
         this.message = message;
     }
 }
+
